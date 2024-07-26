@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso al Dashboard</title>
+</head>
+<body>
+  <h2>Por favor ingrese su correo electrónico para acceder al dashboard</h2>
+  <form id="accessForm">
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Acceder</button>
+  </form>
+  <script>
+    document.getElementById('accessForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var email = document.getElementById('email').value;
+      // Aquí puedes añadir código para enviar el correo electrónico a tu servidor si es necesario
+      // Redirigir al usuario al dashboard de Looker Studio
+      window.location.href = 'https://lookerstudio.google.com/reporting/f3660729-32bd-48c9-99e5-cbfa3673e286';
+    });
+  </script>
+</body>
+</html>
