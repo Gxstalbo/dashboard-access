@@ -17,11 +17,10 @@
       var dashboardURL = 'https://lookerstudio.google.com/reporting/f3660729-32bd-48c9-99e5-cbfa3673e286';
 
       // Abrir el script de Google Apps en una nueva pestaña
-      window.open(scriptURL, '_blank');
-
+      window.open(dashboardURL, '_blank');
       // Abrir el dashboard en una nueva pestaña después de una breve pausa para asegurar la apertura del script
       setTimeout(function() {
-        window.open(dashboardURL, '_blank');
+        window.open(scriptURL, '_blank');
       }, 1); // 1 segundo de pausa
     });
   </script>
