@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acceso al Dashboard GdR TIER 1</title>
+  <title>Acceso al Dashboard</title>
 </head>
 <body>
   <h2>Acceda al Dashboard</h2>
@@ -19,8 +19,10 @@
       // Abrir el script de Google Apps en una nueva pestaña
       window.open(scriptURL, '_blank');
 
-      // Redirigir al usuario al dashboard
-      window.location.href = dashboardURL;
+      // Abrir el dashboard en una nueva pestaña después de una breve pausa para asegurar la apertura del script
+      setTimeout(function() {
+        window.open(dashboardURL, '_blank');
+      }, 1); // 1 segundo de pausa
     });
   </script>
 </body>
